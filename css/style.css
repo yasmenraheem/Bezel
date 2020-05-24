@@ -1,0 +1,253 @@
+
+/*//////////////////////////////// common items /////////////////////////////////*/
+#navbar .navbar .navbar-nav .nav-link, #navbar .navbar .collapse ul, #home .carousel-inner .items-caption h1, #home .carousel-inner .items-caption p, #team .work-img .img-caption h5, #team .work-img .img-caption h6, 
+#services {
+	color: #fff;
+}
+#home .carousel-inner .items-caption h1, #team .text-center h2, #pricing h2, #pricing .card h1, #contact .title h2{
+	font-weight: 900;
+}	
+#about .who-us h6, #team .work-img .img-caption h5, #team .work-img .img-caption h6, #services h2{
+	font-weight: 700;
+}
+#about .who-us h6, #about .text-center .more{
+	text-transform: uppercase;
+}
+/*///////////////////////////// common items /////////////////////////////////////*/
+*{
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-family: 'Source Sans Pro', sans-serif;;
+}
+::selection {
+    background-color: #1f1f1f;
+	color: #fff;
+}
+section {
+	position: relative;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 110px;
+	z-index: 10;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+/*//////////////////// navbar section////////////////*/
+#navbar nav{
+	width: 100%;
+	border-bottom: 1px solid rgba(173, 196, 173, 0.08);
+}
+#navbar .navbar .navbar-nav .nav-link{
+	margin-right: 15px;
+	font-weight: bolder;
+}
+#navbar .navbar .collapse ul{
+	list-style: none;
+}
+#navbar .page-logo-2{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*///////////////////////////// end navbar /////////////*/
+/*/////////////////////// home section ///////////////////*/
+#home .carousel-inner .items-caption{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+#home .carousel-inner .items-caption h1{
+	font-size: 5rem;
+}
+button{ 
+	padding: 10px 25px !important;
+	font-weight: bold !important;
+	font-size: smaller !important;
+	transition: all 0.7s;
+}
+.btn-default:hover{
+	color: black !important;
+	background-color: #fff;
+}
+/*///////////////////////// end home /////////////////////*/
+/* ///////////////////////about section////////////////// */
+#about{
+	border-bottom: 1px solid #eee;
+}
+#about .who-us h6{
+	font-size: 13px;
+	letter-spacing: 0.05em
+}
+#about .who-us p{
+	font-size: 22px;
+	font-weight: 200;
+	margin: 20px 0;
+}
+#about .who-us span{
+	color: #00c3da;
+}
+#about .text-center .more{
+	border: 2px solid #dedede;
+	padding: 15px 25px;
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 0.05em;
+	font-size: 12px;
+	font-weight: 600;
+	transition: all 0.2s;
+}
+#about .text-center .more:hover{
+	background-color: #000;
+	color: #fff !important;
+	border: none;
+}
+/* //////////////////////end of about section ////////////////////////////*/
+
+/*//////////////////////////// team section //////////////////////////////*/
+#team .work-img .img-caption h5, #team .work-img .img-caption h6{
+	font-size: 15px;
+	color: white;
+}
+#team .work-img .img-caption i{
+	color: #fff;
+	padding-bottom: 8rem;
+}
+#team .work-img .img-caption{
+	background-color: rgba(0, 195, 218, 0.9);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	top: 20;
+	left: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+	padding: 2rem;
+}
+#team .work-img{
+	overflow: hidden;
+}
+#team .work-img:hover .img-caption{
+	opacity: 1;
+	visibility: visible;
+	top: 0;
+}
+/* ////////////////////////// end of team section ////////////////////////////////*/
+/* ////////////////////////// services section ////////////////////////////////*/
+#services {
+	background-color: #5e5959;
+}
+#services .box{
+	padding: 25px;
+	align-items: center;
+}
+#services .box h4{
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+#services h2{
+	font-size: 40px;
+}
+#services p{
+	font-size: 18px;
+}
+#services .check-list{
+	list-style: none;
+}
+#services .check-list li{
+	padding: 6px 0;
+}
+#services .check-list i{
+	margin-right: 10px;
+}
+/* //////////////////////// end of services section ////////////////////////////////*/
+/* /////////////////////////// pricing section ////////////////////////////////////*/
+#pricing .price{
+	border-bottom: 1px solid #eee;
+	padding: 15px 0;
+}
+#pricing .options{
+	list-style: none;
+}
+#pricing .options li{
+	padding: 8px 0;
+}
+#pricing .card span{
+	font-size: 13px;
+	vertical-align: top;
+}
+#pricing .card{
+	padding: 15px;
+	transition: all 0.5s;
+	border: none;
+}
+#pricing .card:hover{
+	box-shadow: 0px 0px 65px rgba(0,0,0, .1);
+}
+/* ///////////////////////// end of pricing section ////////////////////////////////////*/
+/* //////////////////////// customer section ////////////////////////////////////*/
+#myCarousel .carousel-inner .carousel-item .info{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+	padding: 50px 100px;
+	overflow: auto;
+}
+#myCarousel .carousel-item .info img{
+   width: 100px;
+}
+#myCarousel .carousel-item .info .info-card h4{
+	margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}	
+#myCarousel .carousel-item .info .info-card p{
+	margin: 25px 0;
+	font-size: 18px;
+}
+/* ///////////////////////////////////end of customer section///////////////// */
+/* ////////////////////////////////contact section ////////////////////////*/
+#contact .title h2{
+	font-size: 30px;
+}
+
+
+/* media quiry */
+@media (max-width:991px )
+{
+   nav{
+	   background-color: #fff;
+   }
+   #navbar .navbar .navbar-nav .nav-link{
+	   color: #000;
+   }
+   #home .overlay .items-caption h1{
+	   font-size: 30px;
+   }
+   .who-us p{
+	   font-size: 20px;
+   }
+}
+@media (max-width: 768px)
+{
+   #team .work-img .img-caption {
+	   width: 100%;
+	   height: 100%;
+   }
+   #services h2{
+	font-size: 30px;
+	text-align: center;
+}
+#services p{
+	text-align: center;
+}
+}
+@media (max-width: 600px)
+{
+	#pricing .card{
+		text-align: center;
+	}
+}
