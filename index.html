@@ -7,20 +7,25 @@
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
         <title>Bezel</title>
     </head>
     <body>
+          <button id="btnUp" class="btn btn-info">
+            <i class="fas fa-arrow-circle-up"></i>
+          </button>
+
           <!--///////////////// header section////////////////////////// -->
            <header id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
               <div class="container">
                 <div class="page-logo position-relative">
                   <a href="index.html">
-                    <img src="img/logo-light.png" alt="">
+                    <img src="img/logo-dark.png" alt="">
                   </a>    
                   <div class="page-logo-2">
                     <a href="index.html">
-                     <img  src="img/logo-dark.png" alt="">
+                     <img  src="img/logo-light.png" alt="">
                     </a> 
                   </div>  
                 </div>
@@ -66,14 +71,63 @@
            </header>
            <!--///////////// end of header section////////////////////// -->
          <!---////////////////- home section ///////////////////////////--->
-           <section id="home" class="pt-0">
+         <section id="home" class="pt-0">
+         
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item bg-1 active">
+                    <div class="layer-gray">
+                      <div class="carousel-info">
+                          <h1>Get Awesome.</h1>
+                          <h4>We are an innovative company making digital stuff.</h4>
+                          <div class="carousel-btn">
+                              <button class="btn  btn-color btn-read  mr-3">Read More</button>
+                              <button class="btn btn-color  ">Contact</button></div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item bg-2">
+                  <div class="layer-gray">
+                      <div class="carousel-info">
+                          <h1>Create with Bezel.</h1>
+                          <h4>We help ambitious companies create new value.</h4>
+                          <div class="carousel-btn">
+                              <button class="btn btn-read btn-color mr-3 ">Hire Us</button>
+                              <button class="btn btn-color ">Services</button>
+                          </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows d-flex flex-column justify-content-center">
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-arrow-left "></i></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-right "></i></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+               </div>
+            </div>
+   </section>
+
+
+
+           <!-- <section id="home" class="pt-0">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active bg-1">
                   <img class="d-block w-100" src="img/bg-image-28.jpg" alt="First slide">
                     <div class="overlay">
                       <div class="items-caption d-flex flex-column justify-content-center align-items-center">
@@ -109,7 +163,7 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-           </section>
+           </section> -->
           <!---/////////////// end home section /////////////////////////--->
           
           <!---/////////////////////about section  //////////////////////--->
@@ -437,10 +491,10 @@
 
 
 
-
-
-        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        
+        <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>    
