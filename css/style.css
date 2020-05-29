@@ -1,10 +1,13 @@
 
 /*//////////////////////////////// common items /////////////////////////////////*/
-#navbar .navbar .navbar-nav .nav-link, #navbar .navbar .collapse ul, #home .carousel-inner .items-caption h1, #home .carousel-inner .items-caption p, #team .work-img .img-caption h5, #team .work-img .img-caption h6, 
+#navbar .navbar .navbar-nav .nav-link, #navbar .navbar .collapse ul{
+	color: #fff;
+}
+ #home .carousel-inner .items-caption h1, #home .carousel-inner .items-caption p, #team .work-img .img-caption h5, #team .work-img .img-caption h6, 
 #services {
 	color: #fff;
 }
-#home .carousel-inner .items-caption h1, #team .text-center h2, #pricing h2, #pricing .card h1, #contact .title h2{
+#team .text-center h2, #pricing h2, #pricing .card h1, #contact .title h2{
 	font-weight: 900;
 }	
 #about .who-us h6, #team .work-img .img-caption h5, #team .work-img .img-caption h6, #services h2{
@@ -17,8 +20,9 @@
 *{
 	box-sizing: border-box;
 	line-height: 1.5;
-	font-family: 'Source Sans Pro', sans-serif;;
+	font-family: 'Source Sans Pro', sans-serif;
 }
+
 ::selection {
     background-color: #1f1f1f;
 	color: #fff;
@@ -32,9 +36,23 @@ section {
 	padding-bottom: 110px;
 }
 /*//////////////////// navbar section////////////////*/
+#btnUp{
+	position: fixed;
+	bottom: 30px;
+	right: 40px;
+	z-index: 9999;
+	display: none;
+}
+#navbar{
+    /* background-color: teal; */
+	z-index: 9999;
+	
+}
 #navbar nav{
 	width: 100%;
-	border-bottom: 1px solid rgba(173, 196, 173, 0.08);
+	background-color: transparent;
+	transition: background-color 1s;
+	/* border-bottom: 1px solid rgba(173, 196, 173, 0.08); */
 }
 #navbar .navbar .navbar-nav .nav-link{
 	margin-right: 15px;
@@ -48,29 +66,107 @@ section {
 	top: 0;
 	left: 0;
 }
+#navbar .page-logo img{
+	width: 50%;
+}
+
 /*///////////////////////////// end navbar /////////////*/
 /*/////////////////////// home section ///////////////////*/
-#home .carousel-inner .items-caption{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.4);
+#home{
+    height: 100vh;
 }
-#home .carousel-inner .items-caption h1{
-	font-size: 5rem;
+#home .carousel{
+    height: 100%;
+    color: white;
 }
-button{ 
-	padding: 10px 25px !important;
-	font-weight: bold !important;
-	font-size: smaller !important;
-	transition: all 0.7s;
+
+#home .layer-gray{
+    background-color: rgba(31, 31, 31, 0.5);
 }
-.btn-default:hover{
-	color: black !important;
-	background-color: #fff;
+#home .carousel-info{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:  15px;
 }
+#home .bg-1{
+    background-image: url("../img/bg-image-28.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home .bg-2{
+    background-image: url("../img/bg-image-29.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .carousel-info h1{
+    font-size: 3.8rem;
+    font-weight: 700; 
+    animation: zoom-in- 0.5s 0.2s ease both;   
+}
+#home .carousel-info h4{
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    animation: zoom-in- 0.5s 0.7s ease both;   
+
+}
+.carousel-btn{
+    animation: zoom-in- 0.5s 1s ease both;   
+}
+
+@keyframes zoom-in-{
+    0%{opacity: 0;
+        transform: scale(0);}
+    100%{transform: scale(1);opacity: 1;}
+}
+
+.btn-color{
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    padding: 1rem 1.7rem;
+    font-size: 0.9rem;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn-color:hover{
+    color: #1f1f1f;
+    background-color: white;
+}
+ .btn-read{
+
+    background-color: #00c3da;
+    border:1px solid #00c3da;
+}
+ .btn-read:hover{
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+    color: white;
+    animation: bg 0.7s  ease;
+
+}
+@keyframes bg {
+    
+    
+    100%{
+        
+        background-image: linear-gradient(to right bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
+    }
+}
+#home .carousel-control-prev, #home .carousel-control-next{
+
+    opacity: 0;
+}
+
+
+
 /*///////////////////////// end home /////////////////////*/
 /* ///////////////////////about section////////////////// */
 #about{
@@ -222,7 +318,7 @@ button{
 	   background-color: #fff;
    }
    #navbar .navbar .navbar-nav .nav-link{
-	   color: #000;
+	   color: #fff;
    }
    #home .overlay .items-caption h1{
 	   font-size: 30px;
